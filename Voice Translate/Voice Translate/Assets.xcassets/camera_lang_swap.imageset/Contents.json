@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "camera_lang_swap.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}

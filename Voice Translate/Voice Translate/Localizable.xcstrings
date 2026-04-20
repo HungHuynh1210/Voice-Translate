@@ -1,0 +1,3120 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "\nIf it still fails, please " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nNếu vẫn thất bại, vui lòng "
+          }
+        }
+      }
+    },
+    "\nIf it still fails, please **check you network Status and contact us by submitting feedback** on the Settings page of the APP. We are always here to help." : {
+
+    },
+    " , or the speaker at the end of the translation, " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " , hoặc biểu tượng loa ở cuối bản dịch, "
+          }
+        }
+      }
+    },
+    " and reopening it to try again." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " và mở lại để thử lại."
+          }
+        }
+      }
+    },
+    " arrow is your mother tongue. (In the latest version, the mother tongue language has the Me logo)" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " mũi tên là tiếng mẹ đẻ của bạn. (Trong phiên bản mới nhất, ngôn ngữ mẹ đẻ có biểu tượng Tôi)"
+          }
+        }
+      }
+    },
+    " at a moderate pace for the best cloning results. After completing the voice cloning process, wait for more than 30 seconds (you can exit the app while waiting), you can check the \"Setting page > Voice Clone option\" state. If the state is " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " với tốc độ vừa phải để có kết quả sao chép tốt nhất. Sau khi hoàn tất quá trình sao chép giọng nói, hãy đợi hơn 30 giây (bạn có thể thoát ứng dụng trong khi chờ), bạn có thể kiểm tra trạng thái \"Trang Cài đặt > Tùy chọn Sao chép giọng nói\". Nếu trạng thái là "
+          }
+        }
+      }
+    },
+    " at the end of the foreign language sentence to hear your voice speaking the foreign language." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " ở cuối câu ngoại ngữ để nghe giọng nói của chính bạn đang nói ngoại ngữ."
+          }
+        }
+      }
+    },
+    " at the end of the text to play the audio of the original text and translation." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " ở cuối văn bản để phát âm thanh của văn bản gốc và bản dịch."
+          }
+        }
+      }
+    },
+    " Features" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " Tính năng"
+          }
+        }
+      }
+    },
+    " icon to turn on the flash." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " biểu tượng để bật đèn flash."
+          }
+        }
+      }
+    },
+    " it is a successful cloning. You can enter the Live Translation process and use your cloned voice to talk to foreign friends normally. If it still shows " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " đây là sao chép thành công. Bạn có thể vào quá trình Dịch trực tiếp và sử dụng giọng nói đã sao chép của mình để nói chuyện bình thường với bạn bè nước ngoài. Nếu nó vẫn hiển thị "
+          }
+        }
+      }
+    },
+    " mode or tap-free dialogue mode for speakers of two different languages." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " chế độ hoặc chế độ đối thoại không cần chạm cho người nói hai ngôn ngữ khác nhau."
+          }
+        }
+      }
+    },
+    " of your phone.\n2. Open the Appname app.\n3. Let the person who needs translation start speaking. After a few seconds, you will hear the translated content in the target language you choose through the earphones." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " của điện thoại của bạn.\n2. Mở ứng dụng Appname.\n3. Hãy để người cần phiên dịch bắt đầu nói. Sau vài giây, bạn sẽ nghe thấy nội dung được dịch sang ngôn ngữ mục tiêu mà bạn chọn thông qua tai nghe."
+          }
+        }
+      }
+    },
+    " on the homepage, wait for 4-5 seconds until the Connecting state ends, then you can start speaking for Live Translation." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " trên trang chủ, đợi 4-5 giây cho đến khi trạng thái Đang Kết Nối kết thúc, sau đó bạn có thể bắt đầu nói để Dịch trực tiếp."
+          }
+        }
+      }
+    },
+    " on the screen. Click the " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " trên màn hình. Nhấp vào "
+          }
+        }
+      }
+    },
+    " on the Settings page of the APP. We are always here to help." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " trên trang Cài đặt của ỨNG DỤNG. Chúng tôi luôn ở đây để giúp đỡ."
+          }
+        }
+      }
+    },
+    " or the " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " hoặc "
+          }
+        }
+      }
+    },
+    " rather than the functional problem of the application. It is recommended that you try the following methods to improve connection stability:" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " thay vì vấn đề chức năng của ứng dụng. Xin khuyến nghị bạn thử các phương pháp sau để cải thiện độ ổn định của kết nối:"
+          }
+        }
+      }
+    },
+    " the translation and click the language name to switch languages. To swap the left and right languages, simply click the " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " bản dịch và nhấp vào tên ngôn ngữ để chuyển đổi ngôn ngữ. Để hoán đổi ngôn ngữ trái và phải, chỉ cần nhấp vào "
+          }
+        }
+      }
+    },
+    " to clone your voice. You can enter " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " để sao chép giọng nói của bạn. Bạn có thể vào "
+          }
+        }
+      }
+    },
+    " to confirm the cloning status again. If it shows " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " để xác nhận lại trạng thái sao chép. Nếu nó hiển thị "
+          }
+        }
+      }
+    },
+    " to copy the translated content and share it with other apps." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " để sao chép nội dung đã dịch và chia sẻ với các ứng dụng khác."
+          }
+        }
+      }
+    },
+    " to see the original image. Click the Share button , then click the " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " để xem hình ảnh gốc. Nhấp vào nút Chia sẻ, sau đó nhấp vào "
+          }
+        }
+      }
+    },
+    " to select a photo from your album for translation, or use the camera to photograph text for translation. When using it for the first time, you'll need to grant " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " để chọn một bức ảnh từ album của bạn để dịch, hoặc sử dụng máy ảnh để chụp văn bản để dịch. Khi sử dụng lần đầu tiên, bạn sẽ cần cấp "
+          }
+        }
+      }
+    },
+    " When taking photos in a dimly lit environment, click the " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " Khi chụp ảnh trong môi trường thiếu sáng, nhấp vào "
+          }
+        }
+      }
+    },
+    " will all affect the effect of voice cloning." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " tất cả sẽ ảnh hưởng đến hiệu quả của việc chép giọng nói."
+          }
+        }
+      }
+    },
+    " will appear on the screen. Click on the " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " sẽ xuất hiện trên màn hình. Nhấp vào "
+          }
+        }
+      }
+    },
+    " with " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " với "
+          }
+        }
+      }
+    },
+    " you can contact us to request additional attempts." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " bạn có thể liên hệ với chúng tôi để yêu cầu thêm số lần thử."
+          }
+        }
+      }
+    },
+    " your " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "  của bạn "
+          }
+        }
+      }
+    },
+    " your voice for cloning in a " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " giọng nói của bạn để chép giọng trong một "
+          }
+        }
+      }
+    },
+    ", and follow the instructions to complete voice cloning." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ", và làm theo hướng dẫn để hoàn tất quá trình sao chép giọng nói."
+          }
+        }
+      }
+    },
+    ", and speech from both parties will appear in the " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ", và giọng nói từ cả hai bên sẽ xuất hiện trong "
+          }
+        }
+      }
+    },
+    ", and you usually only need to focus on the section showing your native languages." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ", và bạn thường chỉ cần tập trung vào phần hiển thị ngôn ngữ mẹ đẻ của mình."
+          }
+        }
+      }
+    },
+    ", the voice cloning is successful. If it shows " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ", việc sao chép giọng nói thành công. Nếu nó hiển thị "
+          }
+        }
+      }
+    },
+    ", then click " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ", sau đó nhấp vào "
+          }
+        }
+      }
+    },
+    ", then voice cloning is unsuccessful." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ", thì quá trình sao chép giọng nói không thành công."
+          }
+        }
+      }
+    },
+    "." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "."
+          }
+        }
+      }
+    },
+    ". Generally speaking, the language to the " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ". Nói chung, ngôn ngữ đối với "
+          }
+        }
+      }
+    },
+    ". If delays persist despite good connectivity, feel free to contact us through the app's feedback feature." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ". Nếu độ trễ vẫn tồn tại mặc dù kết nối tốt, vui lòng liên hệ với chúng tôi thông qua tính năng phản hồi của ứng dụng."
+          }
+        }
+      }
+    },
+    ". If it takes much longer, this is usually a " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ". Nếu mất nhiều thời gian hơn, đây thường là một "
+          }
+        }
+      }
+    },
+    ". Try " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ". Thử "
+          }
+        }
+      }
+    },
+    "\"Cloned\"" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"Đã Sao chép\""
+          }
+        }
+      }
+    },
+    "\"Forget\" the headset in your device's Bluetooth settings, and then go through the pairing process again." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"Quên\" tai nghe trong cài đặt Bluetooth của thiết bị của bạn, rồi thực hiện lại quá trình ghép nối."
+          }
+        }
+      }
+    },
+    "\"I am" : {
+
+    },
+    "\"I am say your name. I understand that my voice will be recorded and used by Voice Translator AI Translate to create a synthetic (cloned) version of my voice. I give permission for my voice recordings to be used for this purpose.\"" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"Tôi tên là [tên của bạn]. Tôi hiểu rằng giọng nói của mình sẽ được ghi lại và sử dụng bởi Voice Translator AI Translate để tạo ra một phiên bản tổng hợp (sao chép) của giọng nói của tôi. Tôi cho phép các bản ghi âm giọng nói của mình được sử dụng cho mục đích này.\""
+          }
+        }
+      }
+    },
+    "\"Setting page > Voice clone option\"" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"Trang cài đặt > Tùy chọn bản sao giọng nói\""
+          }
+        }
+      }
+    },
+    "\"Start new\"" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"Bắt đầu mới\""
+          }
+        }
+      }
+    },
+    "**1. Restart your device and headphones:** This is an effective way to solve many temporary connection problems." : {
+
+    },
+    "**2. Check and update the headset firmware:** Please check the official website or support documentation of your headset manufacturer to confirm whether there is a firmware update available." : {
+
+    },
+    "**3. Check and update the device system/Bluetooth driver:** Make sure your device's operating system and Bluetooth driver are the latest version." : {
+
+    },
+    "**4. Forget the headset in Bluetooth settings:**\n\"Forget\" the headset in your device's Bluetooth settings, and then go through the pairing process again." : {
+
+    },
+    "**5. Try pairing with other devices:** Test whether the headphones are stable on other devices, which helps determine whether the problem is with the headphones themselves or the original device." : {
+
+    },
+    "%@ %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@"
+          }
+        }
+      }
+    },
+    "%@ → %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ → %2$@"
+          }
+        }
+      }
+    },
+    "•" : {
+
+    },
+    "👋" : {
+
+    },
+    "📸" : {
+
+    },
+    "1. Click the " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. Nhấp vào "
+          }
+        }
+      }
+    },
+    "1. Click the **Start button** on the homepage, wait for 4-5 seconds until the Connecting state ends, then you can start speaking for Live Translation." : {
+
+    },
+    "1. Directly insert the earphones into the " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. Cắm trực tiếp tai nghe vào "
+          }
+        }
+      }
+    },
+    "1. Directly insert the earphones into the **earphone jack or adapter** of your phone.\n2. Open the Appname app.\n3. Let the person who needs translation start speaking. After a few seconds, you will hear the translated content in the target language you choose through the earphones." : {
+
+    },
+    "1. First, turn on Bluetooth on your phone and connect the Bluetooth earphones.\n2. Then, open the Appname application.\n3. Let the person who needs translation start speaking. After a few seconds, you will hear the translated content in the target language you choose through the earphones." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. Trước tiên, bật Bluetooth trên điện thoại của bạn và kết nối tai nghe Bluetooth.\n2. Sau đó, mở ứng dụng Appname.\n3. Hãy để người cần phiên dịch bắt đầu nói. Sau vài giây, bạn sẽ nghe thấy nội dung được dịch sang ngôn ngữ mục tiêu mà bạn chọn thông qua tai nghe."
+          }
+        }
+      }
+    },
+    "1. Restart your device and headphones: " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1. Khởi động lại thiết bị và tai nghe của bạn: "
+          }
+        }
+      }
+    },
+    "2. Check and update the headset firmware: " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. Kiểm tra và cập nhật chương trình cơ sở của tai nghe: "
+          }
+        }
+      }
+    },
+    "2. It also supports " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2. Nó cũng hỗ trợ "
+          }
+        }
+      }
+    },
+    "2. It also supports **one-way interpretation** mode or tap-free dialogue mode for speakers of two different languages." : {
+
+    },
+    "3. After the Live Translation starts, you need to " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3. Sau khi Dịch Trực Tiếp bắt đầu, bạn cần "
+          }
+        }
+      }
+    },
+    "3. After the Live Translation starts, you need to **pause** the translation and click the language name to switch languages. To swap the left and right languages, simply click the **double arrow**. Generally speaking, the language to the **right of the double** arrow is your mother tongue. (In the latest version, the mother tongue language has the Me logo)" : {
+
+    },
+    "3. Check and update the device system/Bluetooth driver: " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3. Kiểm tra và cập nhật hệ thống thiết bị/trình điều khiển Bluetooth: "
+          }
+        }
+      }
+    },
+    "4-5 seconds" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4-5 giây"
+          }
+        }
+      }
+    },
+    "4. During a free conversation between the two parties, there is " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4. Trong một cuộc trò chuyện tự do giữa hai bên, có "
+          }
+        }
+      }
+    },
+    "4. During a free conversation between the two parties, there is **no need to click**, and speech from both parties will appear in the **top and bottom sections**, and you usually only need to focus on the section showing your native languages." : {
+
+    },
+    "4. Forget the headset in Bluetooth settings:\n" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4. Quên tai nghe trong cài đặt Bluetooth:\n"
+          }
+        }
+      }
+    },
+    "5. Tap " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5. Chạm "
+          }
+        }
+      }
+    },
+    "5. Tap **the text on the screen or the speaker** at the end of the text to play the audio of the original text and translation." : {
+
+    },
+    "5. Try pairing with other devices: " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5. Thử ghép nối với các thiết bị khác: "
+          }
+        }
+      }
+    },
+    "299.000" : {
+
+    },
+    "a quiet environment" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "một môi trường yên tĩnh"
+          }
+        }
+      }
+    },
+    "abc" : {
+
+    },
+    "About" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giới thiệu"
+          }
+        }
+      }
+    },
+    "According to current technical analysis, the unstable connection of such headphones is usually related to the " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Theo phân tích kỹ thuật hiện tại, kết nối không ổn định của những chiếc tai nghe như vậy thường liên quan đến "
+          }
+        }
+      }
+    },
+    "After successful cloning, enter the normal Live Translation process, click on the " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sau khi sao chép thành công, vào quá trình Dịch Trực Tiếp bình thường, nhấp vào "
+          }
+        }
+      }
+    },
+    "After successful cloning, enter the normal Live Translation process, click on the **translated text on the screen** , or the speaker at the end of the translation, **you can hear your voice speaking a foreign language!**" : {
+
+    },
+    "After taking a photo, the translation will " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sau khi chụp một bức ảnh, bản dịch sẽ "
+          }
+        }
+      }
+    },
+    "Agree & Continue" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đồng ý & Tiếp tục"
+          }
+        }
+      }
+    },
+    "AI Notes" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ghi chú AI"
+          }
+        }
+      }
+    },
+    "AI Processing" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xử lý bằng AI"
+          }
+        }
+      }
+    },
+    "AI Summary" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tóm tắt bằng AI"
+          }
+        }
+      }
+    },
+    "AI Summary is generated here..." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tóm tắt AI sẽ được tạo ở đây..."
+          }
+        }
+      }
+    },
+    "All" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tất cả"
+          }
+        }
+      }
+    },
+    "All Language" : {
+
+    },
+    "All notes" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tất cả ghi chú"
+          }
+        }
+      }
+    },
+    "Analyzing your voice..." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đang phân tích giọng nói của bạn..."
+          }
+        }
+      }
+    },
+    "App Language" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Language"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngôn ngữ ứng dụng"
+          }
+        }
+      }
+    },
+    "Are you sure you want to delete this voice clone?" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bạn có chắc chắn muốn xóa bản sao giọng nói này không?"
+          }
+        }
+      }
+    },
+    "Are you sure you want to delete your cloned voice? You will need to record a new sample to create another voice clone." : {
+
+    },
+    "Auto Playback" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tự động phát"
+          }
+        }
+      }
+    },
+    "Auto-clear Text" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tự động xóa văn bản"
+          }
+        }
+      }
+    },
+    "Auto-Detect Language" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tự động phát hiện ngôn ngữ"
+          }
+        }
+      }
+    },
+    "Automatically play the translated audio" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tự động phát âm thanh bản dịch"
+          }
+        }
+      }
+    },
+    "Background noise levels," : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mức độ tiếng ồn xung quanh,"
+          }
+        }
+      }
+    },
+    "be automatically displayed" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "được tự động hiển thị"
+          }
+        }
+      }
+    },
+    "Before You Continue" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trước khi bạn tiếp tục"
+          }
+        }
+      }
+    },
+    "bilingual text" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "văn bản song ngữ"
+          }
+        }
+      }
+    },
+    "bravohk.inc.app@gmail.com" : {
+
+    },
+    "Camera" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Máy ảnh"
+          }
+        }
+      }
+    },
+    "camera and photo access permissions." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "quyền truy cập máy ảnh và thư viện ảnh."
+          }
+        }
+      }
+    },
+    "Camera tab" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thẻ máy ảnh"
+          }
+        }
+      }
+    },
+    "Can't find what you're looking for? Reach out to us directly." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không tìm thấy thứ bạn cần? Hãy liên hệ trực tiếp với chúng tôi."
+          }
+        }
+      }
+    },
+    "Can't find your field?" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không tìm thấy lĩnh vực của bạn?"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hủy"
+          }
+        }
+      }
+    },
+    "Cancel anytime" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hủy bất kỳ lúc nào"
+          }
+        }
+      }
+    },
+    "Change Password" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đổi mật khẩu"
+          }
+        }
+      }
+    },
+    "check you network Status and contact us by submitting feedback" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "kiểm tra trạng thái mạng của bạn và liên hệ với chúng tôi bằng cách gửi phản hồi"
+          }
+        }
+      }
+    },
+    "Choose your field for more accurate\ninterpretation results." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chọn lĩnh vực của bạn để có kết quả\nphiên dịch chính xác hơn."
+          }
+        }
+      }
+    },
+    "clear speech" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "giọng nói rõ ràng"
+          }
+        }
+      }
+    },
+    "Clear the input box on successful translation" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa hộp thoại nhập sau khi dịch thành công"
+          }
+        }
+      }
+    },
+    "clearer and louder speech." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nói to và rõ ràng hơn."
+          }
+        }
+      }
+    },
+    "Click to start" : {
+
+    },
+    "Clone your voice and listen to it speak other languages" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clone your voice and listen to it speak other languages"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tạo bản sao giọng nói của bạn và nghe nó nói các ngôn ngữ khác"
+          }
+        }
+      }
+    },
+    "Cloned," : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đã Sao Chép,"
+          }
+        }
+      }
+    },
+    "closing the app completely" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "đóng hoàn toàn ứng dụng"
+          }
+        }
+      }
+    },
+    "Confirm" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xác nhận"
+          }
+        }
+      }
+    },
+    "Confirm to Proceed with Voice Cloning" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xác nhận để tiến hành Tạo bản sao giọng nói"
+          }
+        }
+      }
+    },
+    "Continue" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếp tục"
+          }
+        }
+      }
+    },
+    "CONTINUE" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TIẾP TỤC"
+          }
+        }
+      }
+    },
+    "Copy button" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nút sao chép"
+          }
+        }
+      }
+    },
+    "Copy kết quả" : {
+
+    },
+    "Create a voice profile to personalize your translated audio output." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tạo một hồ sơ giọng nói để cá nhân hóa đầu ra âm thanh dịch của bạn."
+          }
+        }
+      }
+    },
+    "Create New Voice Profile" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tạo hồ sơ giọng nói mới"
+          }
+        }
+      }
+    },
+    "Custom" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Custom"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tùy chỉnh"
+          }
+        }
+      }
+    },
+    "đ 1.999.000" : {
+
+    },
+    "Đang ghi âm..." : {
+
+    },
+    "Đang gọi Gemini AI..." : {
+
+    },
+    "Default" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mặc định"
+          }
+        }
+      }
+    },
+    "Delete" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa"
+          }
+        }
+      }
+    },
+    "Delete Account" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa tài khoản"
+          }
+        }
+      }
+    },
+    "Delete Voice Clone" : {
+
+    },
+    "Delete your old voice" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa giọng nói cũ của bạn"
+          }
+        }
+      }
+    },
+    "Description*" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mô tả*"
+          }
+        }
+      }
+    },
+    "Detect language from speech or photo automatically" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tự động phát hiện ngôn ngữ từ giọng nói hoặc ảnh"
+          }
+        }
+      }
+    },
+    "Deutsch" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deutsch"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếng Đức"
+          }
+        }
+      }
+    },
+    "Display in" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hiển thị bằng"
+          }
+        }
+      }
+    },
+    "Display in:" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hiển thị bằng:"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoàn tất"
+          }
+        }
+      }
+    },
+    "double arrow" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "mũi tên kép"
+          }
+        }
+      }
+    },
+    "E.g. Professional Tone" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VD: Giọng Chuyên Nghiệp"
+          }
+        }
+      }
+    },
+    "earphone jack or adapter" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "giắc cắm tai nghe hoặc đầu chuyển"
+          }
+        }
+      }
+    },
+    "Edit Text" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sửa văn bản"
+          }
+        }
+      }
+    },
+    "Email" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Email"
+          }
+        }
+      }
+    },
+    "Enable Free Trial" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kích hoạt dùng thử miễn phí"
+          }
+        }
+      }
+    },
+    "Enable Voice Cloning" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kích hoạt Bản sao giọng nói"
+          }
+        }
+      }
+    },
+    "Enable voice cloning to generate interpreted voices that sound exactly like you." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kích hoạt bản sao giọng nói để tạo giọng phiên dịch phát âm giống hệt bạn."
+          }
+        }
+      }
+    },
+    "English" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "English"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếng Anh"
+          }
+        }
+      }
+    },
+    "Enter your email address" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhập địa chỉ email của bạn"
+          }
+        }
+      }
+    },
+    "Español" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Español"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếng Tây Ban Nha"
+          }
+        }
+      }
+    },
+    "Feedback" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feedback"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phản hồi"
+          }
+        }
+      }
+    },
+    "Finish Later" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoàn thành sau"
+          }
+        }
+      }
+    },
+    "First, you need to go to the " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đầu tiên, bạn cần đi đến "
+          }
+        }
+      }
+    },
+    "Flash" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đèn Flash"
+          }
+        }
+      }
+    },
+    "Flashlight" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đèn pin"
+          }
+        }
+      }
+    },
+    "For more information, please refer to our " : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Để biết thêm thông tin, vui lòng tham khảo "
+          }
+        }
+      }
+    },
+    "foreign language text or click the speaker button" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "văn bản ngoại ngữ hoặc nhấp vào nút loa"
+          }
+        }
+      }
+    },
+    "Gallery" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thư viện"
+          }
+        }
+      }
+    },
+    "Gallery button" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nút Thư viện"
+          }
+        }
+      }
+    },
+    "General" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "General"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đa dụng"
+          }
+        }
+      }
+    },
+    "Generating Your Voice" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đang tạo giọng nói của bạn"
+          }
+        }
+      }
+    },
+    "Giọng nói" : {
+
+    },
+    "Guest User" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Người dùng Khách"
+          }
+        }
+      }
+    },
+    "hardware device itself," : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "bản thân thiết bị phần cứng,"
+          }
+        }
+      }
+    },
+    "Headphone Related Issues" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Các vấn đề liên quan đến Tai nghe"
+          }
+        }
+      }
+    },
+    "Hear real-time translations and get smart AI summaries instantly" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hear real-time translations and get smart AI summaries instantly"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nghe bản dịch trực tiếp và nhận tóm tắt AI thông minh ngay lập tức"
+          }
+        }
+      }
+    },
+    "Hear translations in your own voice!" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nghe bản dịch bằng chính giọng nói của bạn!"
+          }
+        }
+      }
+    },
+    "Here are some simple step-by-step instructions on how to use the headphone translation feature in Appname:" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dưới đây là một số hướng dẫn từng bước đơn giản về cách sử dụng tính năng dịch tai nghe trong Appname:"
+          }
+        }
+      }
+    },
+    "Hi There!" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xin chào!"
+          }
+        }
+      }
+    },
+    "Hiển thị bằng" : {
+
+    },
+    "Hình ảnh 1" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hình ảnh 1"
+          }
+        }
+      }
+    },
+    "How Your Data Is Processed" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dữ liệu của bạn được xử lý như thế nào"
+          }
+        }
+      }
+    },
+    "Hủy" : {
+
+    },
+    "I understand" : {
+
+    },
+    "If activated, the translation will play automatically." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nếu được bật, bản dịch sẽ tự động phát."
+          }
+        }
+      }
+    },
+    "If the headset fails to connect the first time, try " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nếu tai nghe không kết nối được lần đầu, hãy thử "
+          }
+        }
+      }
+    },
+    "If the problem persists, you can also contact the headset manufacturer's customer service for more professional hardware support." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nếu sự cố vẫn tồn tại, bạn cũng có thể liên hệ với bộ phận dịch vụ khách hàng của nhà sản xuất tai nghe để được hỗ trợ phần cứng chuyên nghiệp hơn."
+          }
+        }
+      }
+    },
+    "If you are using Bluetooth earphones:" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nếu bạn đang sử dụng tai nghe Bluetooth:"
+          }
+        }
+      }
+    },
+    "If you are using wired headphones:" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nếu bạn đang sử dụng tai nghe có dây:"
+          }
+        }
+      }
+    },
+    "In normal network conditions, the first translation takes about " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trong điều kiện mạng bình thường, bản dịch đầu tiên mất khoảng "
+          }
+        }
+      }
+    },
+    "Interpretation" : {
+
+    },
+    "Issues Related to Live Translation" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Các vấn đề liên quan đến Phiên dịch Trực tiếp"
+          }
+        }
+      }
+    },
+    "It is recommended that you " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xin khuyến nghị bạn "
+          }
+        }
+      }
+    },
+    "just 38.442" : {
+
+    },
+    "Kết quả tóm tắt" : {
+
+    },
+    "Language" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngôn ngữ"
+          }
+        }
+      }
+    },
+    "Log Out" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đăng xuất"
+          }
+        }
+      }
+    },
+    "Lỗi" : {
+
+    },
+    "Make sure your device's operating system and Bluetooth driver are the latest version." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hãy đảm bảo hệ điều hành của thiết bị và trình điều khiển Bluetooth của bạn là phiên bản mới nhất."
+          }
+        }
+      }
+    },
+    "Microphone Related Issues" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Các vấn đề liên quan đến Micrô"
+          }
+        }
+      }
+    },
+    "more than 5 seconds" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "hơn 5 giây"
+          }
+        }
+      }
+    },
+    "My Account" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tài khoản của tôi"
+          }
+        }
+      }
+    },
+    "My Dreams" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ước mơ của tôi"
+          }
+        }
+      }
+    },
+    "My History" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lịch sử của tôi"
+          }
+        }
+      }
+    },
+    "My Industry" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "My Industry"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lĩnh vực của tôi"
+          }
+        }
+      }
+    },
+    "Name your Voice Profile" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đặt tên cho Hồ sơ Giọng nói của bạn"
+          }
+        }
+      }
+    },
+    "network issue" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sự cố mạng"
+          }
+        }
+      }
+    },
+    "Next" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếp theo"
+          }
+        }
+      }
+    },
+    "Nhập văn bản" : {
+
+    },
+    "no need to click" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "không cần nhấp"
+          }
+        }
+      }
+    },
+    "No Voice Profiles" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không có Hồ sơ Giọng nói"
+          }
+        }
+      }
+    },
+    "Not Now" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Để sau"
+          }
+        }
+      }
+    },
+    "Note: " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lưu ý: "
+          }
+        }
+      }
+    },
+    "Nothing here yet. Let's\nget started!" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chưa có gì ở đây. Hãy\nbắt đầu nào!"
+          }
+        }
+      }
+    },
+    "OK" : {
+
+    },
+    "one-way interpretation" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "phiên dịch một chiều"
+          }
+        }
+      }
+    },
+    "Open " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mở "
+          }
+        }
+      }
+    },
+    "Our engine trains a model on your pitch." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hệ thống của chúng tôi đào tạo một mô hình dựa trên cao độ của bạn."
+          }
+        }
+      }
+    },
+    "pause" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tạm dừng"
+          }
+        }
+      }
+    },
+    "per week" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "mỗi tuần"
+          }
+        }
+      }
+    },
+    "Personalize Your\nInterpretation" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cá nhân hóa\nBản dịch của bạn"
+          }
+        }
+      }
+    },
+    "Photo Translation Related Issues" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Các vấn đề liên quan đến Dịch ảnh"
+          }
+        }
+      }
+    },
+    "Please check the official website or support documentation of your headset manufacturer to confirm whether there is a firmware update available." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vui lòng kiểm tra trang web chính thức hoặc tài liệu hỗ trợ của nhà sản xuất tai nghe của bạn để xác nhận xem có bản cập nhật chương trình cơ sở hay không."
+          }
+        }
+      }
+    },
+    "Please choose the main language for translation transcripts and summary" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vui lòng chọn ngôn ngữ chính cho bản dịch văn bản và tóm tắt"
+          }
+        }
+      }
+    },
+    "Please let us know how many hours of simultaneous interpretation you require daily." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vui lòng cho chúng tôi biết bạn cần bao nhiêu giờ phiên dịch đồng thời mỗi ngày."
+          }
+        }
+      }
+    },
+    "Please read the following text aloud to train your voice model." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vui lòng đọc to đoạn văn bản sau để đào tạo mô hình giọng nói của bạn."
+          }
+        }
+      }
+    },
+    "Please record longer than 10 seconds and try again." : {
+
+    },
+    "Please review and confirm the following requirements for secure voice cloning." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vui lòng xem lại và xác nhận các yêu cầu sau để quá trình tạo bản sao giọng nói được an toàn."
+          }
+        }
+      }
+    },
+    "Please wait while AI constructs your personalized audio profile. This may take a few moments." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vui lòng đợi trong khi AI xây dựng hồ sơ âm thanh cá nhân hóa của bạn. Việc này có thể mất chút thời gian."
+          }
+        }
+      }
+    },
+    "Portugués" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Portugués"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếng Bồ Đào Nha"
+          }
+        }
+      }
+    },
+    "Privacy policy" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chính sách Bảo mật"
+          }
+        }
+      }
+    },
+    "Privacy Policy" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chính sách Bảo mật"
+          }
+        }
+      }
+    },
+    "PRO" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CHUYÊN NGHIỆP"
+          }
+        }
+      }
+    },
+    "Process Voice" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xử lý Giọng nói"
+          }
+        }
+      }
+    },
+    "quiet environment" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "môi trường yên tĩnh"
+          }
+        }
+      }
+    },
+    "re-record" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ghi lại"
+          }
+        }
+      }
+    },
+    "Read 3 short sentences aloud." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đọc to 3 câu ngắn."
+          }
+        }
+      }
+    },
+    "Read Out the Entire Sentence" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đọc to toàn bộ câu"
+          }
+        }
+      }
+    },
+    "Read Out the Entire Sentence Correctly" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đọc to toàn bộ câu một cách chính xác"
+          }
+        }
+      }
+    },
+    "Ready to Translate" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sẵn sàng dịch"
+          }
+        }
+      }
+    },
+    "Real-Time\nTranslation" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Real-Time\nTranslation"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phiên Dịch\nTrực Tiếp"
+          }
+        }
+      }
+    },
+    "Record a Sample" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ghi một mẫu âm thanh"
+          }
+        }
+      }
+    },
+    "Recording... 00:05" : {
+
+    },
+    "Reset" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Làm lại"
+          }
+        }
+      }
+    },
+    "Reset Voice Clone" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tạo lại Bản sao Giọng nói"
+          }
+        }
+      }
+    },
+    "right of the double" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "phía phải của mũi tên kép"
+          }
+        }
+      }
+    },
+    "Save & Finish" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lưu & Hoàn thành"
+          }
+        }
+      }
+    },
+    "say your name." : {
+
+    },
+    "Scan New Image" : {
+
+    },
+    "Search history..." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tìm kiếm lịch sử..."
+          }
+        }
+      }
+    },
+    "Search in notes..." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tìm kiếm trong ghi chú..."
+          }
+        }
+      }
+    },
+    "Search language" : {
+
+    },
+    "Select Language" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chọn Ngôn ngữ"
+          }
+        }
+      }
+    },
+    "Sentence %lld of 3" : {
+
+    },
+    "Settings" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt"
+          }
+        }
+      }
+    },
+    "Settings page > Voice clone option" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trang cài đặt > Tùy chọn bản sao giọng nói"
+          }
+        }
+      }
+    },
+    "Share App" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Share App"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chia sẻ ứng dụng"
+          }
+        }
+      }
+    },
+    "Show original" : {
+
+    },
+    "Show Original button" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nút Hiện Bản Gốc"
+          }
+        }
+      }
+    },
+    "Show text" : {
+
+    },
+    "Simply record your voice for " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đơn giản chỉ cần ghi âm giọng nói của bạn trong "
+          }
+        }
+      }
+    },
+    "Simply record your voice for **more than 5 seconds** to clone your voice. You can enter **the voice cloning process from the voice cloning pop-up window** or the **\"Setting page > Voice clone option\"**, and follow the instructions to complete voice cloning." : {
+
+    },
+    "Simulate Processing Complete" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mô phỏng Xử lý Thành công"
+          }
+        }
+      }
+    },
+    "Smart \nPhoto Translation" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Smart \nPhoto Translation"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dịch Ảnh\nThông Minh"
+          }
+        }
+      }
+    },
+    "Start button" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nút Bắt đầu"
+          }
+        }
+      }
+    },
+    "Start New" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start New"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bắt đầu mới"
+          }
+        }
+      }
+    },
+    "Start new," : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bắt đầu mới,"
+          }
+        }
+      }
+    },
+    "Submit Feedback" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gửi Phản hồi"
+          }
+        }
+      }
+    },
+    "Suggestion" : {
+
+    },
+    "switching to a different network" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "chuyển sang một mạng khác"
+          }
+        }
+      }
+    },
+    "Tailor To Your Field" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tùy chỉnh theo Lĩnh vực của bạn"
+          }
+        }
+      }
+    },
+    "Take a picture and let AI detect and translate the text for you" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Take a picture and let AI detect and translate the text for you"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chụp ảnh và để AI phát hiện và dịch văn bản cho bạn"
+          }
+        }
+      }
+    },
+    "Tap the microphone to start\nspeaking..." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chạm vào micrô để bắt đầu\nnói..."
+          }
+        }
+      }
+    },
+    "Tap to start" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chạm để bắt đầu"
+          }
+        }
+      }
+    },
+    "Terms of Service" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Điều khoản Dịch vụ"
+          }
+        }
+      }
+    },
+    "Test whether the headphones are stable on other devices, which helps determine whether the problem is with the headphones themselves or the original device." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kiểm tra xem tai nghe có ổn định trên các thiết bị khác hay không, điều này giúp xác định xem sự cố là do bản thân tai nghe hay thiết bị gốc."
+          }
+        }
+      }
+    },
+    "Text Settings" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt Văn bản"
+          }
+        }
+      }
+    },
+    "that my voice will be recorded and used by Voice Translator AI Translate to create a synthetic (cloned) version of my voice. I give permission for my voice recordings to be used for this purpose.\"" : {
+
+    },
+    "the text on the screen or the speaker" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "văn bản trên màn hình hoặc loa"
+          }
+        }
+      }
+    },
+    "the voice cloning process from the voice cloning pop-up window" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "quá trình sao chép giọng nói từ cửa sổ bật lên sao chép giọng nói"
+          }
+        }
+      }
+    },
+    "This information is used solely to generate translations and AI-generated responses.\nWe do not sell or share your personal data for commercial purposes." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông tin này chỉ được sử dụng để tạo bản dịch và phản hồi do AI tạo.\nChúng tôi không bán hoặc chia sẻ dữ liệu cá nhân của bạn cho mục đích thương mại."
+          }
+        }
+      }
+    },
+    "This is an effective way to solve many temporary connection problems." : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đây là một cách hiệu quả để giải quyết nhiều vấn đề kết nối tạm thời."
+          }
+        }
+      }
+    },
+    "This might take about 1 minute" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Việc này có thể mất khoảng 1 phút"
+          }
+        }
+      }
+    },
+    "Thử lại" : {
+
+    },
+    "Tiếng Việt" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếng Việt"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếng Việt"
+          }
+        }
+      }
+    },
+    "Tip: " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mẹo: "
+          }
+        }
+      }
+    },
+    "To enable AI translation and processing features, the app securely sends certain data to OpenAI, a third-party AI service provider. This may include:\n • Voice recordings\n • Images that you upload" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Để bật các tính năng dịch và xử lý AI, ứng dụng gửi an toàn một số dữ liệu nhất định tới OpenAI. Điều này có thể bao gồm:\n • Bản ghi âm giọng nói\n • Hình ảnh bạn tải lên"
+          }
+        }
+      }
+    },
+    "Today" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hôm nay"
+          }
+        }
+      }
+    },
+    "Tóm tắt" : {
+
+    },
+    "top and bottom sections" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "phần trên và phần dưới"
+          }
+        }
+      }
+    },
+    "Translate" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dịch"
+          }
+        }
+      }
+    },
+    "Translate From" : {
+
+    },
+    "Translate To" : {
+
+    },
+    "translated text on the screen" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "văn bản dịch trên màn hình"
+          }
+        }
+      }
+    },
+    "Translating..." : {
+
+    },
+    "Translation" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bản dịch"
+          }
+        }
+      }
+    },
+    "Translation failed." : {
+
+    },
+    "Unlock " : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mở khóa "
+          }
+        }
+      }
+    },
+    "User Guide" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "User Guide"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hướng dẫn sử dụng"
+          }
+        }
+      }
+    },
+    "user@example.com" : {
+
+    },
+    "Văn bản" : {
+
+    },
+    "Vietnamese" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếng Việt"
+          }
+        }
+      }
+    },
+    "Voice Clone" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voice Clone"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bản sao giọng nói"
+          }
+        }
+      }
+    },
+    "Voice Clone Ready!" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bản sao giọng nói đã sẵn sàng!"
+          }
+        }
+      }
+    },
+    "Voice Profile Ready!" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hồ sơ giọng nói đã sẵn sàng!"
+          }
+        }
+      }
+    },
+    "Voice Profiles" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hồ sơ Giọng nói"
+          }
+        }
+      }
+    },
+    "Voice Translator" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phiên dịch giọng nói"
+          }
+        }
+      }
+    },
+    "volume , intonation and speaking speed" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "âm lượng, ngữ điệu và tốc độ nói"
+          }
+        }
+      }
+    },
+    "Vui lòng chọn 1 trong 3 phương thức trên để bắt đầu" : {
+
+    },
+    "Vui lòng chọn ngôn ngữ chính cho bản dịch và tóm tắt" : {
+
+    },
+    "We successfully generated a clone mimicking your pitch and tone. You can now use this voice for all your translated readings." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chúng tôi đã tạo thành công một bản sao bắt chước cao độ và giọng điệu của bạn. Giờ đây, bạn có thể sử dụng giọng nói này cho tất cả các bài đọc dịch của mình."
+          }
+        }
+      }
+    },
+    "We're here to help!" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chúng tôi ở đây để giúp đỡ!"
+          }
+        }
+      }
+    },
+    "Weekly Plan" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weekly Plan"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gói Hàng tuần"
+          }
+        }
+      }
+    },
+    "What can I help you with?" : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tôi có thể giúp bạn điều gì?"
+          }
+        }
+      }
+    },
+    "When recording your voice, ensure " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khi ghi âm giọng nói của bạn, hãy đảm bảo "
+          }
+        }
+      }
+    },
+    "When recording your voice, please ensure you:\n- Read the entire passage displayed on the screen completely.\n- Do not omit or misread more than three words.\n- Insert your own name into the paragraph as you read it.\n- Do not read any extra words that are not part of the passage on the screen.\n- Do not read too fast or too slow." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khi ghi âm giọng nói của bạn, vui lòng đảm bảo bạn:\n- Đọc toàn bộ đoạn văn hiển thị trên màn hình một cách hoàn chỉnh.\n- Không bỏ sót hoặc đọc sai quá ba từ.\n- Chèn tên của chính bạn vào đoạn văn khi bạn đọc nó.\n- Không đọc bất kỳ từ thừa nào không thuộc đoạn văn trên màn hình.\n- Đọc không quá nhanh hoặc quá chậm."
+          }
+        }
+      }
+    },
+    "When translating, " : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khi dịch, "
+          }
+        }
+      }
+    },
+    "When translating, **bilingual text** will appear on the screen. Click on the **foreign language text or click the speaker button** at the end of the foreign language sentence to hear your voice speaking the foreign language." : {
+
+    },
+    "Yearly Plan" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yearly Plan"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gói Hàng năm"
+          }
+        }
+      }
+    },
+    "you can hear your voice speaking a foreign language!" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "bạn có thể nghe giọng nói của chính mình đang nói ngoại ngữ!"
+          }
+        }
+      }
+    },
+    "Your feedback helps us grow." : {
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phản hồi của bạn giúp chúng tôi phát triển."
+          }
+        }
+      }
+    },
+    "Your signed consent:" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sự đồng ý đã ký của bạn:"
+          }
+        }
+      }
+    },
+    "Your Voice\nAny Language" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your Voice\nAny Language"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giọng Nói Của Bạn\nMọi Ngôn Ngữ"
+          }
+        }
+      }
+    },
+    "한국어" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "한국어"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếng Hàn"
+          }
+        }
+      }
+    },
+    "日本語" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日本語"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếng Nhật"
+          }
+        }
+      }
+    },
+    "繁體中文" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "繁體中文"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếng Trung Phồn thể"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.1"
+}
