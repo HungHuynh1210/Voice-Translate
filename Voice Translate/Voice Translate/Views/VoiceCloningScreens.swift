@@ -456,6 +456,8 @@ struct RecordingView: View {
     struct SuccessView: View {
         let onFinish: () -> Void
         @EnvironmentObject var audioManager: VoiceCloningAudio
+        @AppStorage("isAutoPlaybackEnabled") private var isAutoPlaybackEnabled = true
+        @State private var hasPlayedOnce = false
         
         var body: some View {
             VStack(spacing: 24) {
@@ -504,9 +506,14 @@ struct RecordingView: View {
                 let defaultEngText = "I am say your name. I understand that my voice will be recorded and used by Voice Translator AI Translate to create a synthetic (cloned) version of my voice. I give permission for my voice recordings to be used for this purpose."
                 let textToRead = audioManager.selectedLanguage == "English" ? defaultEngText : (audioManager.translatedPrompt ?? "Translation failed.")
                 
-                // Auto play the AI voice once when the screen appears
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                    audioManager.readTextWithAI(text: textToRead)
+                if isAutoPlaybackEnabled && !hasPlayedOnce {
+                    // Auto play the AI voice once when the screen appears
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        if !hasPlayedOnce { // Double check inside async
+                            audioManager.readTextWithAI(text: textToRead)
+                            hasPlayedOnce = true
+                        }
+                    }
                 }
             }
         }

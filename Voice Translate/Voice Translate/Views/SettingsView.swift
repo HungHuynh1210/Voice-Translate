@@ -142,11 +142,13 @@ struct SettingsView: View {
                             CustomDivider()
                             SettingsRow(iconName: "icon_user_guide", title: "User Guide", destination: UserGuideMenuView())
                             CustomDivider()
-                            SettingsRow(iconName: "icon_feedback", title: "Feedback")
+                            SettingsRow(iconName: "icon_feedback", title: "Feedback", destination: FeedbackView())
                             CustomDivider()
-                            SettingsRow(iconName: "icon_share", title: "Share App")
+                            SettingsRow(iconName: "icon_share", title: "Share App", action: {
+                                shareApp()
+                            })
                             CustomDivider()
-                            SettingsRow(iconName: "icon_about", title: "About")
+                            SettingsRow(iconName: "icon_about", title: "About", destination: AboutView())
                         }
                         
                         Spacer().frame(height: 100)
@@ -166,6 +168,27 @@ struct SettingsView: View {
                     onSubscribe: { showIAP = false }
                 )
             }
+        }
+    }
+    
+    private func shareApp() {
+        let appStoreLink = "https://apps.apple.com/app/id123456789" // Placeholder cho ID thật
+        let textToShare = "Check out Voice Translator • AI Translate! The best app for real-time translation and voice cloning.\n\(appStoreLink)"
+        
+        let activityVC = UIActivityViewController(activityItems: [textToShare], applicationActivities: nil)
+        
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let window = windowScene.windows.first(where: { $0.isKeyWindow }),
+           let rootVC = window.rootViewController {
+            
+            // Dành riêng cho iPad để tránh bị crash
+            if let popover = activityVC.popoverPresentationController {
+                popover.sourceView = window
+                popover.sourceRect = CGRect(x: UIScreen.main.bounds.midX, y: UIScreen.main.bounds.midY, width: 0, height: 0)
+                popover.permittedArrowDirections = []
+            }
+            
+            rootVC.present(activityVC, animated: true, completion: nil)
         }
     }
 }

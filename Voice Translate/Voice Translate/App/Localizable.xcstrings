@@ -736,7 +736,6 @@
 
     },
     "About" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1187,6 +1186,9 @@
         }
       }
     },
+    "Contact Us" : {
+
+    },
     "Continue" : {
       "localizations" : {
         "vi" : {
@@ -1505,7 +1507,6 @@
       }
     },
     "Feedback" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1520,6 +1521,9 @@
           }
         }
       }
+    },
+    "Feedback sent succesfully!" : {
+
     },
     "Finish Later" : {
       "localizations" : {
@@ -1870,6 +1874,9 @@
         }
       }
     },
+    "manhhung05bn@gmail.com" : {
+
+    },
     "Microphone Related Issues" : {
       "localizations" : {
         "vi" : {
@@ -2101,6 +2108,9 @@
         }
       }
     },
+    "Play Sample" : {
+
+    },
     "Please check the official website or support documentation of your headset manufacturer to confirm whether there is a firmware update available." : {
       "extractionState" : "stale",
       "localizations" : {
@@ -2221,6 +2231,9 @@
           }
         }
       }
+    },
+    "Provide details for us to better support you.\nFeature suggestions are welcomed!" : {
+
     },
     "quiet environment" : {
       "extractionState" : "stale",
@@ -2533,6 +2546,12 @@
         }
       }
     },
+    "Stop Sample" : {
+
+    },
+    "Submit" : {
+
+    },
     "Submit Feedback" : {
       "localizations" : {
         "vi" : {
@@ -2829,6 +2848,9 @@
     "user@example.com" : {
 
     },
+    "V1.0" : {
+
+    },
     "Văn bản" : {
 
     },
@@ -2900,6 +2922,9 @@
           }
         }
       }
+    },
+    "Voice Translator • AI Translate" : {
+
     },
     "volume , intonation and speaking speed" : {
       "extractionState" : "stale",

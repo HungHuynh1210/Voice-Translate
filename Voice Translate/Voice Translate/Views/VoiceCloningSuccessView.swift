@@ -3,6 +3,10 @@ import SwiftUI
 struct VoiceCloningSuccessView: View {
     @State private var voiceName: String = "My AI Voice"
     
+    @AppStorage("isAutoPlaybackEnabled") private var isAutoPlaybackEnabled = true
+    @StateObject private var manager = VoiceCloningManager.shared
+    @State private var hasPlayedOnce = false
+    
     var body: some View {
         VStack {
             Spacer()
@@ -24,7 +28,28 @@ struct VoiceCloningSuccessView: View {
                 .foregroundColor(.themeSecondaryText)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 40)
-                .padding(.bottom, 32)
+                .padding(.bottom, 24)
+            
+            Button(action: {
+                if manager.isPlaying {
+                    manager.stopPlaying()
+                } else {
+                    manager.playRecording()
+                }
+            }) {
+                HStack {
+                    Image(systemName: manager.isPlaying ? "stop.circle.fill" : "play.circle.fill")
+                        .font(.system(size: 24))
+                    Text(manager.isPlaying ? "Stop Sample" : "Play Sample")
+                        .font(.system(size: 16, weight: .semibold))
+                }
+                .foregroundColor(.themePrimary)
+                .padding(.vertical, 10)
+                .padding(.horizontal, 20)
+                .background(Color.themePrimary.opacity(0.1))
+                .cornerRadius(20)
+            }
+            .padding(.bottom, 32)
             
             VStack(alignment: .leading, spacing: 8) {
                 Text("Name your Voice Profile")
@@ -63,6 +88,15 @@ struct VoiceCloningSuccessView: View {
         }
         .background(Color.themeBackgroundGray.ignoresSafeArea())
         .navigationBarHidden(true)
+        .onAppear {
+            if isAutoPlaybackEnabled && !hasPlayedOnce {
+                manager.playRecording()
+                hasPlayedOnce = true
+            }
+        }
+        .onDisappear {
+            manager.stopPlaying()
+        }
     }
 }
 
