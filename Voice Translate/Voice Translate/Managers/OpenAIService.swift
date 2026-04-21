@@ -61,7 +61,7 @@ class OpenAIService {
             account: "apikey"
         )
         if let key = key, !key.isEmpty { return key }
-        return "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"
+        return "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"
     }
     
     func updateAPIKey(_ newKey: String) {
