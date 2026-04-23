@@ -27,6 +27,7 @@ struct VoiceTranslatorView: View {
     @State private var isSelectingSource = true
     @State private var showAINotes = false
     @State private var showCamera = false
+    @State private var showFeedbackForm = false
     
     // Services
     @StateObject private var speechManager = SpeechManager()
@@ -110,9 +111,36 @@ struct VoiceTranslatorView: View {
             )
         }
         .sheet(isPresented: $showIndustryPopup) {
-            MyIndustryView()
-                .presentationDetents([.fraction(0.95)])
-                .presentationDragIndicator(.visible)
+            if #available(iOS 16.4, *) {
+                MyIndustryView(onShowFeedback: {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                        showFeedbackForm = true
+                    }
+                }, isPresentedAsSheet: true)
+                    .presentationDetents([.fraction(0.95)])
+                    .presentationDragIndicator(.hidden)
+                    .presentationBackground(Color(hex: "#F8FAFC"))
+            } else {
+                MyIndustryView(onShowFeedback: {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                        showFeedbackForm = true
+                    }
+                }, isPresentedAsSheet: true)
+                    .presentationDetents([.fraction(0.95)])
+                    .presentationDragIndicator(.hidden)
+            }
+        }
+        .sheet(isPresented: $showFeedbackForm) {
+            if #available(iOS 16.4, *) {
+                FeedbackFormContainer(showFeedbackForm: $showFeedbackForm)
+                    .presentationDetents([.height(390)])
+                    .presentationDragIndicator(.visible)
+                    .presentationCornerRadius(24)
+            } else {
+                FeedbackFormContainer(showFeedbackForm: $showFeedbackForm)
+                    .presentationDetents([.height(390)])
+                    .presentationDragIndicator(.visible)
+            }
         }
         .sheet(isPresented: $showLanguagePicker) {
             TranslationLanguagePicker(
