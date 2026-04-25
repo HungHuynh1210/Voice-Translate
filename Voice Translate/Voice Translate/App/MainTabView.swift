@@ -45,10 +45,8 @@ struct CustomTabBar: View {
             TabButton(icon: "icon_tab_translate", activeIcon: "icon_tab_translate", title: "Translate", isSystem: false, isSelected: selectedTab == 0) {
                 selectedTab = 0
             }
-            if selectedTab != 2 {
-                TabButton(icon: "camera", activeIcon: "camera.fill", title: "Camera", isSelected: selectedTab == 1) {
-                    selectedTab = 1
-                }
+            TabButton(icon: "camera", activeIcon: "camera.fill", title: "Camera", isSelected: selectedTab == 1) {
+                selectedTab = 1
             }
             TabButton(icon: "gearshape", activeIcon: "gearshape.fill", title: "Settings", isSelected: selectedTab == 2) {
                 selectedTab = 2

@@ -25,15 +25,13 @@ struct FeedbackView: View {
                     Button(action: {
                         presentationMode.wrappedValue.dismiss()
                     }) {
-                        ZStack {
-                            Circle()
-                                .fill(Color(hex: "#F1F5F9"))
-                                .frame(width: 36, height: 36)
-                            Image(systemName: "chevron.left")
-                                .font(.system(size: 14, weight: .semibold))
-                                .foregroundColor(Color(hex: "#0F172A"))
-                        }
+                        Image(systemName: "chevron.left")
+                            .font(.system(size: 20, weight: .bold))
+                            .foregroundColor(Color(hex: "#0F172A"))
+                            .frame(width: 40, height: 40)
+                            .background(Color.clear)
                     }
+                    .buttonStyle(PlainButtonStyle())
                     
                     Spacer()
                     
@@ -71,9 +69,8 @@ struct FeedbackView: View {
                         
                         // Description Field
                         VStack(alignment: .leading, spacing: 8) {
-                            Text("Description*")
+                            (Text("Description").foregroundColor(Color(hex: "#0F172A")) + Text("*").foregroundColor(Color(hex: "#FF0000")))
                                 .font(.system(size: 16, weight: .medium))
-                                .foregroundColor(Color(hex: "#0F172A"))
                             
                             if #available(iOS 16.0, *) {
                                 TextField("", text: $description, prompt: Text("Provide details for us to better support you.\nFeature suggestions are welcomed!").foregroundColor(Color(hex: "#94A3B8")), axis: .vertical)
@@ -130,7 +127,7 @@ struct FeedbackView: View {
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity)
                             .frame(height: 56)
-                            .background(isFormValid ? Color(hex: "#0069F2") : Color(hex: "#9CA3AF"))
+                            .background(Color(hex: "#0069F2").opacity(isFormValid ? 1.0 : 0.4))
                             .cornerRadius(16)
                             .shadow(color: isFormValid ? Color(hex: "#0069F2").opacity(0.3) : Color.clear, radius: 10, y: 4)
                         }

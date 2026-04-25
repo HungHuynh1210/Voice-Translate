@@ -514,6 +514,9 @@
         }
       }
     },
+    "*" : {
+
+    },
     "**1. Restart your device and headphones:** This is an effective way to solve many temporary connection problems." : {
 
     },
@@ -1312,7 +1315,11 @@
         }
       }
     },
+    "Description" : {
+
+    },
     "Description*" : {
+      "extractionState" : "stale",
       "localizations" : {
         "vi" : {
           "stringUnit" : {

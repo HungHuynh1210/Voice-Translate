@@ -22,15 +22,13 @@ struct AboutView: View {
                 Button(action: {
                     presentationMode.wrappedValue.dismiss()
                 }) {
-                    ZStack {
-                        Circle()
-                            .fill(Color(hex: "#E2E8F0").opacity(0.8))
-                            .frame(width: 32, height: 32)
-                        Image(systemName: "chevron.left")
-                            .font(.system(size: 14, weight: .semibold))
-                            .foregroundColor(Color(hex: "#0F172A"))
-                    }
+                    Image(systemName: "chevron.left")
+                        .font(.system(size: 20, weight: .bold))
+                        .foregroundColor(Color(hex: "#0F172A"))
+                        .frame(width: 40, height: 40)
+                        .background(Color.clear)
                 }
+                .buttonStyle(PlainButtonStyle())
                 
                 Spacer()
                 

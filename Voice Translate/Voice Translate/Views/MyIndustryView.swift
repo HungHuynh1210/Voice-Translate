@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 
 struct CategoryItem: Identifiable {
     let id = UUID()
@@ -12,8 +13,10 @@ struct MyIndustryView: View {
     @Environment(\.presentationMode) var presentationMode
     @State private var tempSelectedIndustry: String = ""
     var onShowFeedback: (() -> Void)? = nil
+    var onClose: (() -> Void)? = nil
     var isPresentedAsSheet: Bool = false
     @State private var internalShowFeedbackForm: Bool = false
+    @State private var popupDragOffset: CGFloat = 0
     
     let categories: [CategoryItem] = [
         CategoryItem(icon: "icon_industry_general", title: "General", subtitle: "Standard terms"),
@@ -31,99 +34,135 @@ struct MyIndustryView: View {
     
     var body: some View {
         ZStack(alignment: .top) {
-            VStack(spacing: 0) {
-            VStack(alignment: .leading, spacing: 24) {
-                // Header
-                VStack(alignment: .leading, spacing: 16) {
-                        Text("Personalize Your\nInterpretation")
-                            .font(.system(size: 24, weight: .bold))
-                            .foregroundColor(Color(hex: "#0F172A"))
-                            .lineSpacing(6)
-                            .fixedSize(horizontal: false, vertical: true)
-                        
-                        Text("Choose your field for more accurate\ninterpretation results.")
-                            .font(.system(size: 16, weight: .regular))
-                            .foregroundColor(Color(hex: "#64748B"))
-                            .lineSpacing(4)
-                            .fixedSize(horizontal: false, vertical: true)
+            GeometryReader { geometry in
+                VStack(spacing: 0) {
+                    // Custom Header
+                    if !isPresentedAsSheet {
+                        HStack {
+                            Button(action: {
+                                presentationMode.wrappedValue.dismiss()
+                            }) {
+                                Image(systemName: "chevron.left")
+                                    .font(.system(size: 20, weight: .bold))
+                                    .foregroundColor(Color(hex: "#0F172A"))
+                                    .frame(width: 40, height: 40)
+                                    .background(Color.clear)
+                            }
+                            .buttonStyle(PlainButtonStyle())
+                            
+                            Spacer()
+                            
+                            Text("Interpretation")
+                                .font(.system(size: 18, weight: .bold))
+                                .foregroundColor(Color(hex: "#0F172A"))
+                            
+                            Spacer()
+                            
+                            Color.clear.frame(width: 40, height: 40)
+                        }
+                        .padding(.horizontal, 16)
+                        .padding(.top, 16)
+                        .padding(.bottom, 8)
                     }
-                    .padding(.top, isPresentedAsSheet ? 58 : 24)
-                    .padding(.horizontal, 24)
                     
-                    // Grid
-                    VStack(spacing: 12) {
-                        ForEach(0..<(categories.count + 1) / 2, id: \.self) { rowIndex in
-                            HStack(spacing: 16) {
-                                let index1 = rowIndex * 2
-                                let index2 = rowIndex * 2 + 1
-                                
-                                IndustryCard(
-                                    category: categories[index1],
-                                    isSelected: tempSelectedIndustry == categories[index1].title
-                                ) { tempSelectedIndustry = categories[index1].title }
-                                
-                                if index2 < categories.count {
+                    VStack(alignment: .leading, spacing: 24) {
+                        // Header
+                        VStack(alignment: .leading, spacing: 16) {
+                        VStack(alignment: .leading, spacing: 16) {
+                            Text("Personalize Your\nInterpretation")
+                                .font(.system(size: 24, weight: .bold))
+                                .foregroundColor(Color(hex: "#0F172A"))
+                                .lineSpacing(6)
+                                .fixedSize(horizontal: false, vertical: true)
+                            
+                            Text("Choose your field for more accurate\ninterpretation results.")
+                                .font(.system(size: 16, weight: .regular))
+                                .foregroundColor(Color(hex: "#64748B"))
+                                .lineSpacing(4)
+                                .fixedSize(horizontal: false, vertical: true)
+                            }
+                        }
+                        .padding(.top, isPresentedAsSheet ? 58 : 24)
+                        .padding(.horizontal, 24)
+                        
+                        // Grid
+                        VStack(spacing: 12) {
+                            ForEach(0..<(categories.count + 1) / 2, id: \.self) { rowIndex in
+                                HStack(spacing: 16) {
+                                    let index1 = rowIndex * 2
+                                    let index2 = rowIndex * 2 + 1
+                                    
                                     IndustryCard(
-                                        category: categories[index2],
-                                        isSelected: tempSelectedIndustry == categories[index2].title
-                                    ) { tempSelectedIndustry = categories[index2].title }
-                                } else {
-                                    Color.clear
-                                        .frame(maxWidth: .infinity)
+                                        category: categories[index1],
+                                        isSelected: tempSelectedIndustry == categories[index1].title
+                                    ) { tempSelectedIndustry = categories[index1].title }
+                                    
+                                    if index2 < categories.count {
+                                        IndustryCard(
+                                            category: categories[index2],
+                                            isSelected: tempSelectedIndustry == categories[index2].title
+                                        ) { tempSelectedIndustry = categories[index2].title }
+                                    } else {
+                                        Color.clear
+                                            .frame(maxWidth: .infinity)
+                                    }
                                 }
                             }
                         }
+                        .padding(.horizontal, 20)
+                        .padding(.bottom, 8)
                     }
-                    .padding(.horizontal, 20)
-                    .padding(.bottom, 8)
-                }
-                Spacer(minLength: 0)
-                
-                // Sticky Footer
-                VStack(spacing: 8) {
-                    // Footer Link
-                    Button(action: {
-                        if let onShowFeedback = onShowFeedback {
-                            presentationMode.wrappedValue.dismiss()
-                            onShowFeedback()
-                        } else {
-                            internalShowFeedbackForm = true
+                    
+                    Spacer(minLength: 0)
+                    
+                    // Sticky Footer
+                    VStack(spacing: 8) {
+                        // Footer Link
+                        Button(action: {
+                            if let onShowFeedback = onShowFeedback {
+                                presentationMode.wrappedValue.dismiss()
+                                onShowFeedback()
+                            } else {
+                                withAnimation(.spring()) { internalShowFeedbackForm = true }
+                            }
+                        }) {
+                            Text("Can't find your field?")
+                                    .font(.system(size: 16, weight: .medium))
+                                    .foregroundColor(Color(hex: "#94A3B8"))
+                            }
+                            .frame(maxWidth: .infinity, alignment: .center)
+                            .padding(.top, 16)
+                            .padding(.bottom, 0)
+                            
+                        // Confirm Button
+                        Button(action: {
+                            selectedIndustry = tempSelectedIndustry
+                            onClose?() ?? presentationMode.wrappedValue.dismiss()
+                        }) {
+                            HStack(spacing: 8) {
+                                Text("Confirm")
+                                    .font(.system(size: 18, weight: .bold))
+                                Image(systemName: "arrow.right")
+                                    .font(.system(size: 18, weight: .bold))
+                            }
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 56)
+                            .background(Color(hex: "#0069F2"))
+                            .cornerRadius(16)
                         }
-                    }) {
-                        Text("Can't find your field?")
-                                .font(.system(size: 16, weight: .medium))
-                                .foregroundColor(Color(hex: "#94A3B8"))
-                        }
-                        .frame(maxWidth: .infinity, alignment: .center)
-                        .padding(.top, 16)
-                        .padding(.bottom, 0)
-                        
-                    // Confirm Button
-                    Button(action: {
-                        selectedIndustry = tempSelectedIndustry
-                        presentationMode.wrappedValue.dismiss()
-                    }) {
-                        HStack(spacing: 8) {
-                            Text("Confirm")
-                                .font(.system(size: 18, weight: .bold))
-                            Image(systemName: "arrow.right")
-                                .font(.system(size: 18, weight: .bold))
-                        }
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 56)
-                        .background(Color(hex: "#0069F2"))
-                        .cornerRadius(16)
                     }
+                    .padding(.horizontal, 24)
+                    .padding(.bottom, 16)
+                    .padding(.top, 16)
+                    .background(Color(hex: "#F8FAFC"))
                 }
-                .padding(.horizontal, 24)
-                .padding(.bottom, 16)
-                .padding(.top, 16)
-                .background(Color(hex: "#F8FAFC"))
+                .frame(width: geometry.size.width, height: geometry.size.height)
+                .onAppear {
+                    tempSelectedIndustry = selectedIndustry
+                }
             }
-            .onAppear {
-                tempSelectedIndustry = selectedIndustry
-            }
+            .ignoresSafeArea(.keyboard, edges: .bottom)
             
             // Custom Drag Handle at the top of the sheet
             if isPresentedAsSheet {
@@ -132,42 +171,59 @@ struct MyIndustryView: View {
                     .frame(width: 40, height: 5)
                     .padding(.top, 12)
             }
+            
+
+            // Custom Feedback Form Overlay
+            if internalShowFeedbackForm {
+                Color.black.opacity(0.4)
+                    .ignoresSafeArea()
+                    .onTapGesture {
+                        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                        withAnimation(.spring()) { internalShowFeedbackForm = false }
+                    }
+                    .zIndex(102)
+                
+                VStack(spacing: 0) {
+                    Spacer()
+                    FeedbackFormContainer(showFeedbackForm: $internalShowFeedbackForm)
+                        .frame(height: 480)
+                        .clipShape(RoundedCorner(radius: 24, corners: [.topLeft, .topRight]))
+                        .background(
+                            RoundedCorner(radius: 24, corners: [.topLeft, .topRight])
+                                .fill(Color.white)
+                                .ignoresSafeArea(.all, edges: .bottom)
+                        )
+                        .offset(y: popupDragOffset)
+                        .gesture(
+                            DragGesture()
+                                .onChanged { value in
+                                    if value.translation.height > 0 {
+                                        popupDragOffset = value.translation.height
+                                    }
+                                }
+                                .onEnded { value in
+                                    if value.translation.height > 80 {
+                                        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                                        withAnimation(.spring()) {
+                                            internalShowFeedbackForm = false
+                                            popupDragOffset = 0
+                                        }
+                                    } else {
+                                        withAnimation(.spring()) {
+                                            popupDragOffset = 0
+                                        }
+                                    }
+                                }
+                        )
+                }
+                .zIndex(103)
+                .transition(.move(edge: .bottom))
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(hex: "#F8FAFC").ignoresSafeArea())
-        .ignoresSafeArea(.keyboard)
         .preferredColorScheme(.light)
-        .sheet(isPresented: $internalShowFeedbackForm) {
-            if #available(iOS 16.4, *) {
-                FeedbackFormContainer(showFeedbackForm: $internalShowFeedbackForm)
-                    .presentationDetents([.height(390)])
-                    .presentationDragIndicator(.visible)
-                    .presentationCornerRadius(24)
-                    .presentationBackground(Color(hex: "#F8FAFC"))
-            } else {
-                FeedbackFormContainer(showFeedbackForm: $internalShowFeedbackForm)
-                    .presentationDetents([.height(390)])
-                    .presentationDragIndicator(.visible)
-            }
-        }
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationBarBackButtonHidden(true)
-        .toolbar {
-            ToolbarItem(placement: .principal) {
-                Text("Interpretation")
-                    .font(.system(size: 18, weight: .bold))
-                    .foregroundColor(Color(hex: "#0F172A"))
-            }
-            ToolbarItem(placement: .navigationBarLeading) {
-                Button(action: {
-                    presentationMode.wrappedValue.dismiss()
-                }) {
-                    Image(systemName: "chevron.left")
-                        .font(.system(size: 20, weight: .bold))
-                        .foregroundColor(Color(hex: "#0F172A"))
-                }
-            }
-        }
+        .navigationBarHidden(true)
     }
 }
 
@@ -285,6 +341,13 @@ struct FeedbackFormSheet: View {
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
+                // Custom Drag Handle
+                Capsule()
+                    .fill(Color(hex: "#CBD5E1"))
+                    .frame(width: 40, height: 5)
+                    .padding(.top, 12)
+                    .padding(.bottom, 4)
+                    
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
                     // Sheet Header
@@ -321,9 +384,8 @@ struct FeedbackFormSheet: View {
                     
                     // Description Field
                     VStack(alignment: .leading, spacing: 8) {
-                        Text("Description*")
+                        (Text("Description").foregroundColor(Color(hex: "#0F172A")) + Text("*").foregroundColor(Color(hex: "#FF0000")))
                             .font(.system(size: 14, weight: .medium))
-                            .foregroundColor(Color(hex: "#0F172A"))
                         
                         ZStack(alignment: .topLeading) {
                             TextEditor(text: $description)
@@ -332,7 +394,7 @@ struct FeedbackFormSheet: View {
                                 .font(.system(size: 15))
                                 .foregroundColor(Color(hex: "#0F172A"))
                                 .padding(12)
-                                .frame(minHeight: 80) // using minHeight for Scrollable inside TextEditor
+                                .frame(minHeight: 150) // using minHeight for Scrollable inside TextEditor
                                 .background(Color(hex: "#F8FAFC"))
                                 .cornerRadius(16)
                                 .overlay(
@@ -343,6 +405,7 @@ struct FeedbackFormSheet: View {
                             if description.isEmpty {
                                 Text("Please let us know how many hours of simultaneous interpretation you require daily.")
                                     .font(.system(size: 15))
+                                    .lineSpacing(6)
                                     .foregroundColor(Color(hex: "#94A3B8"))
                                     .padding(.top, 16)
                                     .padding(.horizontal, 16)
@@ -352,7 +415,7 @@ struct FeedbackFormSheet: View {
                     }
                 }
                 .padding(.horizontal, 24)
-                .padding(.bottom, 8)
+                .padding(.bottom, 40)
             }
             .scrollDismissesKeyboard(.interactively)
             
@@ -377,7 +440,7 @@ struct FeedbackFormSheet: View {
                     }
                     .frame(maxWidth: .infinity)
                     .frame(height: 52)
-                    .background(isFormValid ? Color(hex: "#0069F2") : Color(hex: "#9CA3AF"))
+                    .background(Color(hex: "#0069F2").opacity(isFormValid ? 1.0 : 0.4))
                     .cornerRadius(26)
                     .shadow(color: isFormValid ? Color(hex: "#0069F2").opacity(0.3) : Color.clear, radius: 10, y: 4)
                 }
@@ -387,8 +450,6 @@ struct FeedbackFormSheet: View {
                 .padding(.bottom, 16)
             }
             .background(Color.white)
-            // Optional separator line
-            .overlay(Rectangle().frame(height: 1).foregroundColor(Color(hex: "#E2E8F0")), alignment: .top)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.white.ignoresSafeArea())

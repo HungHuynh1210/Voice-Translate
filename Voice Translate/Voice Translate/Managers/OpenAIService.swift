@@ -61,7 +61,7 @@ class OpenAIService {
             account: "apikey"
         )
         if let key = key, !key.isEmpty { return key }
-        return "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"
+        return "YOUR_API_KEY_HERE"
     }
     
     func updateAPIKey(_ newKey: String) {
@@ -73,45 +73,40 @@ class OpenAIService {
     }
     
     // MARK: - System Prompt (Cải tiến)
-    private func systemPrompt(for language: String = "Vietnamese") -> String {
-        return """
-        Bạn là trợ lý tóm tắt nội dung cho người dùng không có chuyên môn kỹ thuật.
+    private func systemPrompt(for language: String = "Vietnamese", isDeepAnalysis: Bool = false) -> String {
+        if isDeepAnalysis {
+            return """
+            Bạn là chuyên gia phân tích chuyên sâu.
 
-        QUY TẮC CỨNG - VI PHẠM LÀ SAI:
-        - KHÔNG liệt kê tên file, tên biến, tên function, tên class
-        - KHÔNG dịch từng dòng code hay text trong ảnh
-        - KHÔNG giữ nguyên thuật ngữ kỹ thuật như "struct", "var", "overlay", "DataProcessing"
-        - KHÔNG quá 80 từ
-        - Giải thích MỤC ĐÍCH bằng ngôn ngữ đời thường
-        - Người không biết lập trình cũng hiểu được
-        - Tập trung vào: đây là màn hình gì, dùng để làm gì
+            QUY TẮC CỨNG:
+            1. Phân tích CHUYÊN SÂU nhưng CỰC KỲ NGẮN GỌN trong đúng 3 dòng gạch đầu dòng.
+            2. KHÔNG viết tiêu đề như "Hình ảnh 1" hay dùng ngoặc vuông [].
+            3. KHÔNG viết chữ "Tổng quan:" hay "Nội dung chính:". Chỉ viết 3 dòng gạch đầu dòng.
 
-        VÍ DỤ ĐÚNG (Áp dụng ngôn ngữ \(language)):
-        **Màn hình chờ xử lý dữ liệu**
-        Tổng quan: Giao diện hiển thị khi app đang xử lý dữ liệu ở nền.
-        Nội dung chính:
-        - Che màn hình chính khi đang bận xử lý
-        - Người dùng không thao tác được trong lúc này
-        - Tự động biến mất khi xong việc
+            OUTPUT FORMAT BẮT BUỘC:
+            - [Dòng 1: Phân tích chuyên sâu về bản chất/logic/ý nghĩa cốt lõi]
+            - [Dòng 2: Tóm tắt hoạt động/nội dung quan trọng nhất]
+            - [Dòng 3: Tác động hoặc kết luận]
+            
+            QUAN TRỌNG: Toàn bộ nội dung trả về PHẢI được dịch và viết bằng ngôn ngữ: \(language.uppercased()).
+            """
+        } else {
+            return """
+            Bạn là trợ lý giúp chuyển đổi và tóm tắt thông tin từ hình ảnh hoặc văn bản.
+            Nhiệm vụ của bạn là lấy ra 3 nội dung hoặc đoạn mã code quan trọng nhất và trình bày lại một cách rõ ràng.
 
-        LƯU Ý THEO TỪNG LOẠI INPUT:
-        - Hình ảnh: mô tả MỤC ĐÍCH của màn hình/tài liệu, không đọc từng dòng text
-        - Văn bản: tóm tắt ý chính, bỏ chi tiết thừa
-        - Giọng nói: chắt lọc nội dung cốt lõi, bỏ các từ đệm, ừ, à...
+            Vui lòng trả kết quả theo ĐÚNG cấu trúc sau:
 
-        OUTPUT FORMAT BẮT BUỘC:
-        **[Tiêu đề ngắn gọn - ngôn ngữ \(language)]**
+            **Hình ảnh 1**
+            - [Trích xuất hoặc tóm tắt đoạn nội dung/code quan trọng thứ nhất]
+            - [Trích xuất hoặc tóm tắt đoạn nội dung/code quan trọng thứ hai]
+            - [Trích xuất hoặc tóm tắt đoạn nội dung/code quan trọng thứ ba]
 
-        Tổng quan: [1 câu đơn giản, ai cũng hiểu - ngôn ngữ \(language)]
-
-        Nội dung chính:
-        - [điểm 1 - ngôn ngữ \(language)]
-        - [điểm 2 - ngôn ngữ \(language)]
-        - [điểm 3 nếu thực sự cần - ngôn ngữ \(language)]
-        
-        QUAN TRỌNG: Toàn bộ nội dung trả về (tiêu đề, câu tóm tắt, list) PHẢI được dịch và viết bằng ngôn ngữ: \(language.uppercased()). Tuyệt đối KHÔNG xuất tiếng Việt nếu ngôn ngữ yêu cầu không phải tiếng Việt.
-        Hai cụm từ cố định "Tổng quan:" và "Nội dung chính:" cũng PHẢI DỊCH SANG \(language.uppercased())! (Ví dụ tiếng Anh sẽ thành "Overview:" và "Main Content:").
-        """
+            Lưu ý: 
+            - Trả lời bằng ngôn ngữ \(language.uppercased()). 
+            - KHÔNG thêm bất kỳ giải thích nào khác, KHÔNG có phần "Tổng quan" hay câu chốt ở dưới cùng. Chỉ in ra đúng tiêu đề và 3 gạch đầu dòng.
+            """
+        }
     }
 
     // MARK: - Summarize Text
@@ -133,7 +128,7 @@ class OpenAIService {
     }
 
     // MARK: - Summarize Image
-    func summarize(image: UIImage, targetLanguage: String = "Vietnamese") async throws -> SummaryResult {
+    func summarize(image: UIImage, targetLanguage: String = "Vietnamese", isDeepAnalysis: Bool = false) async throws -> SummaryResult {
         guard let imageData = image.jpegData(compressionQuality: 0.8) else {
             throw SummarizeError.unclearImage
         }
@@ -142,11 +137,11 @@ class OpenAIService {
         let body: [String: Any] = [
             "model": "gpt-4o",
             "messages": [
-                ["role": "system", "content": systemPrompt(for: targetLanguage)],
+                ["role": "system", "content": systemPrompt(for: targetLanguage, isDeepAnalysis: isDeepAnalysis)],
                 ["role": "user", "content": [
                     [
                         "type": "text",
-                        "text": "Hãy phân tích hình ảnh này và in ra kết quả phân tích tóm tắt gói gọn giống hệt format đã yêu cầu gồm tiêu đề, phần tổng quan và nội dung chính, TOÀN BỘ BẰNG NGÔN NGỮ \(targetLanguage.uppercased())."
+                        "text": "Hãy trích xuất và tóm tắt hình ảnh này theo đúng định dạng đã yêu cầu."
                     ],
                     [
                         "type": "image_url",

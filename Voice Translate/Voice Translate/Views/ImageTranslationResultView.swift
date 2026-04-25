@@ -581,7 +581,7 @@ struct ImageTranslationResultView: View {
 
         Task {
             do {
-                let result = try await OpenAIService.shared.summarize(image: image, targetLanguage: targetLanguage)
+                let result = try await OpenAIService.shared.summarize(image: image, targetLanguage: targetLanguage, isDeepAnalysis: true)
                 DispatchQueue.main.async {
                     self.aiSummary = result.content
                     self.isSummarizing = false

@@ -1,5 +1,4 @@
 import SwiftUI
-import UIKit
 import AVFoundation
 import Combine
 
@@ -28,10 +27,6 @@ struct VoiceTranslatorView: View {
     @State private var isSelectingSource = true
     @State private var showAINotes = false
     @State private var showCamera = false
-    @State private var showFeedbackForm = false
-    @State private var popupDragOffset: CGFloat = 0
-    @State private var isTransitioningPopups: Bool = false
-    @AppStorage("hideTabBar") private var hideTabBar = false
     
     // Services
     @StateObject private var speechManager = SpeechManager()
@@ -54,9 +49,7 @@ struct VoiceTranslatorView: View {
     
     var body: some View {
         ZStack {
-            // MAIN UI (FROZEN)
-            ZStack {
-                Color(hex: "#F0F4FF").ignoresSafeArea() // Light blue-grey
+            Color(hex: "#F0F4FF").ignoresSafeArea() // Light blue-grey
             
             VStack(spacing: 0) {
                 headerView
@@ -94,115 +87,6 @@ struct VoiceTranslatorView: View {
             }
             
 
-            }
-            .ignoresSafeArea(.keyboard)
-            
-            // OVERLAYS (SHRINKABLE)
-            ZStack {
-                // Custom Industry Sheet Overlay
-                if showIndustryPopup {
-                    Color.black.opacity(0.4)
-                        .ignoresSafeArea()
-                        .onTapGesture {
-                            withAnimation(.spring()) { showIndustryPopup = false }
-                        }
-                        .zIndex(100)
-                    
-                    VStack(spacing: 0) {
-                        Spacer()
-                        MyIndustryView(
-                            onShowFeedback: {
-                                isTransitioningPopups = true
-                                withAnimation(.spring()) { showIndustryPopup = false }
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                                    withAnimation(.spring()) { showFeedbackForm = true }
-                                    isTransitioningPopups = false
-                                }
-                            },
-                            onClose: {
-                                withAnimation(.spring()) { showIndustryPopup = false }
-                            },
-                            isPresentedAsSheet: true
-                        )
-                        .frame(maxHeight: UIScreen.main.bounds.height * 0.83)
-                        .clipShape(RoundedCorner(radius: 24, corners: [.topLeft, .topRight]))
-                        .background(
-                            RoundedCorner(radius: 24, corners: [.topLeft, .topRight])
-                                .fill(Color(hex: "#F8FAFC"))
-                                .ignoresSafeArea(.all, edges: .bottom)
-                        )
-                        .offset(y: popupDragOffset)
-                        .gesture(
-                            DragGesture()
-                                .onChanged { value in
-                                    if value.translation.height > 0 {
-                                        popupDragOffset = value.translation.height
-                                    }
-                                }
-                                .onEnded { value in
-                                    if value.translation.height > 100 {
-                                        withAnimation(.spring()) {
-                                            showIndustryPopup = false
-                                            popupDragOffset = 0
-                                        }
-                                    } else {
-                                        withAnimation(.spring()) {
-                                            popupDragOffset = 0
-                                        }
-                                    }
-                                }
-                        )
-                    }
-                    .zIndex(101)
-                    .transition(.move(edge: .bottom))
-                }
-                
-                // Custom Feedback Form Overlay
-                if showFeedbackForm {
-                    Color.black.opacity(0.4)
-                        .ignoresSafeArea()
-                        .onTapGesture {
-                            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-                            withAnimation(.spring()) { showFeedbackForm = false }
-                        }
-                        .zIndex(102)
-                    
-                    VStack(spacing: 0) {
-                        Spacer()
-                        FeedbackFormContainer(showFeedbackForm: $showFeedbackForm)
-                            .frame(height: 480) 
-                            .clipShape(RoundedCorner(radius: 24, corners: [.topLeft, .topRight]))
-                            .background(
-                                RoundedCorner(radius: 24, corners: [.topLeft, .topRight])
-                                    .fill(Color.white)
-                                    .ignoresSafeArea(.all, edges: .bottom)
-                            )
-                            .offset(y: popupDragOffset)
-                            .gesture(
-                                DragGesture()
-                                    .onChanged { value in
-                                        if value.translation.height > 0 {
-                                            popupDragOffset = value.translation.height
-                                        }
-                                    }
-                                    .onEnded { value in
-                                        if value.translation.height > 80 {
-                                            withAnimation(.spring()) {
-                                                showFeedbackForm = false
-                                                popupDragOffset = 0
-                                            }
-                                        } else {
-                                            withAnimation(.spring()) {
-                                                popupDragOffset = 0
-                                            }
-                                        }
-                                    }
-                            )
-                    }
-                    .zIndex(103)
-                    .transition(.move(edge: .bottom))
-                }
-            }
         }
         .fullScreenCover(isPresented: $showHistory) {
             HistoryView()
@@ -225,6 +109,11 @@ struct VoiceTranslatorView: View {
                 selectedIndustry: selectedIndustry
             )
         }
+        .sheet(isPresented: $showIndustryPopup) {
+            MyIndustryView()
+                .presentationDetents([.fraction(0.95)])
+                .presentationDragIndicator(.visible)
+        }
         .sheet(isPresented: $showLanguagePicker) {
             TranslationLanguagePicker(
                 selectedLanguage: isSelectingSource ? $sourceLanguage : $targetLanguage,
@@ -237,7 +126,7 @@ struct VoiceTranslatorView: View {
                 
                 speechTimeoutTask?.cancel()
                 speechTimeoutTask = Task {
-                    try? await Task.sleep(nanoseconds: 2_000_000_000)
+                    try? await Task.sleep(nanoseconds: 3_000_000_000)
                     if !Task.isCancelled {
                         await MainActor.run {
                             if self.currentState == .recording {
@@ -247,14 +136,6 @@ struct VoiceTranslatorView: View {
                     }
                 }
             }
-        }
-        .onChange(of: showIndustryPopup) { newValue in
-            if newValue || showFeedbackForm || isTransitioningPopups { hideTabBar = true }
-            else { hideTabBar = false }
-        }
-        .onChange(of: showFeedbackForm) { newValue in
-            if newValue || showIndustryPopup || isTransitioningPopups { hideTabBar = true }
-            else { hideTabBar = false }
         }
         .onAppear {
             speechManager.requestPermission()
@@ -487,7 +368,7 @@ struct VoiceTranslatorView: View {
     // MARK: - Floating / Bottom Elements
     
     private var categoryBadgeView: some View {
-        Button(action: { withAnimation(.spring()) { showIndustryPopup = true } }) {
+        Button(action: { showIndustryPopup = true }) {
             HStack(spacing: 4) {
                 Text(selectedIndustry)
                     .font(.system(size: 14, weight: .medium))
@@ -504,7 +385,7 @@ struct VoiceTranslatorView: View {
     }
     
     private var defaultCategoryButton: some View {
-        Button(action: { withAnimation(.spring()) { showIndustryPopup = true } }) {
+        Button(action: { showIndustryPopup = true }) {
             HStack(spacing: 4) {
                 Text(selectedIndustry)
                     .font(.system(size: 16, weight: .semibold))
