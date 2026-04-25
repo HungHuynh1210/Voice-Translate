@@ -61,7 +61,7 @@ class OpenAIService {
             account: "apikey"
         )
         if let key = key, !key.isEmpty { return key }
-        return "YOUR_API_KEY_HERE"
+        return "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"
     }
     
     func updateAPIKey(_ newKey: String) {
