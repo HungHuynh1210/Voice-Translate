@@ -3,6 +3,7 @@ import SwiftUI
 struct AppLanguageView: View {
     @Environment(\.presentationMode) var presentationMode
     @AppStorage("appLanguageCode") private var appLanguageCode = "en"
+    @AppStorage("selectedTab") private var selectedTab = 0
     @State private var pendingLanguageCode: String = "en"
     
     let languageData: [(name: String, code: String)] = [
@@ -87,8 +88,8 @@ struct AppLanguageView: View {
                 
                 VStack {
                     Button(action: {
+                        selectedTab = 0
                         appLanguageCode = pendingLanguageCode
-                        presentationMode.wrappedValue.dismiss()
                     }) {
                         Text("Confirm")
                             .font(.system(size: 18, weight: .semibold)) // Inter Semi_Bold

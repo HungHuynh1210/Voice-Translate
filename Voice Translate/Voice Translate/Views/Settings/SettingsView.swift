@@ -56,6 +56,7 @@ struct SettingsView: View {
                             SettingsRow(
                                 iconName: "icon_industry",
                                 title: "My Industry",
+                                trailingText: selectedIndustry,
                                 destination: MyIndustryView()
                             )
                         }
@@ -254,6 +255,8 @@ struct SettingsRow<Destination: View>: View {
             Text(LocalizedStringKey(title))
                 .font(.system(size: 16, weight: .medium))
                 .foregroundColor(Color(hex: "#0F172A"))
+                .lineLimit(1)
+                .truncationMode(.tail)
             
             Spacer()
             
@@ -261,6 +264,9 @@ struct SettingsRow<Destination: View>: View {
                 Text(LocalizedStringKey(tr))
                     .font(.system(size: 15, weight: .medium))
                     .foregroundColor(Color(hex: "#94A3B8"))
+                    .lineLimit(1)
+                    .truncationMode(.tail)
+                    .frame(maxWidth: 100, alignment: .trailing)
             }
             
             if showChevron {

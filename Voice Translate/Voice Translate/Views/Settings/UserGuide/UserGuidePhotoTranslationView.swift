@@ -109,18 +109,18 @@ struct UserGuidePhotoTranslationView: View {
     }
     
     private var step1Content: some View {
-        var str = try! AttributedString(markdown: "Open **Camera tab**, then click **Gallery button** to select a photo from your album for translation, or use the camera to photograph text for translation. When using it for the first time, you'll need to grant **camera and photo access permissions.** When taking photos in a dimly lit environment, click the **Flashlight** icon to turn on the flash.")
-        if let range = str.range(of: "camera and photo access permissions.") {
-            str[range].foregroundColor = .red
-        }
-        return Text(str)
+        Text("Open **Camera tab**, then click **Gallery button** to select a photo from your album for translation, or use the camera to photograph text for translation. When using it for the first time, you'll need to grant ")
+        + Text("camera and photo access permissions.")
+            .foregroundColor(.red)
+            .fontWeight(.bold)
+        + Text(" When taking photos in a dimly lit environment, click the **Flashlight** icon to turn on the flash.")
     }
     
     private var step2Content: some View {
-        var str = try! AttributedString(markdown: "After taking a photo, the translation will **be automatically displayed** on the screen. Click the **Show Original button** to see the original image. Click the Share button , then click the **Copy button** to copy the translated content and share it with other apps.")
-        if let range = str.range(of: "be automatically displayed") {
-            str[range].foregroundColor = .green
-        }
-        return Text(str)
+        Text("After taking a photo, the translation will ")
+        + Text("be automatically displayed")
+            .foregroundColor(.green)
+            .fontWeight(.bold)
+        + Text(" on the screen. Click the **Show Original button** to see the original image. Click the Share button , then click the **Copy button** to copy the translated content and share it with other apps.")
     }
 }

@@ -279,11 +279,16 @@ struct IndustryCard: View {
                         Text(LocalizedStringKey(category.title))
                             .font(.system(size: 14, weight: .semibold))
                             .foregroundColor(Color(hex: "#0F172A"))
+                            .lineLimit(1)
+                            .truncationMode(.tail)
                         
                         Text(LocalizedStringKey(category.subtitle))
                             .font(.system(size: 12, weight: .regular))
                             .foregroundColor(Color(hex: "#64748B"))
+                            .lineLimit(1)
+                            .truncationMode(.tail)
                     }
+                    .padding(.horizontal, 8)
                     .padding(.bottom, 12)
                 }
                 .frame(maxWidth: .infinity)

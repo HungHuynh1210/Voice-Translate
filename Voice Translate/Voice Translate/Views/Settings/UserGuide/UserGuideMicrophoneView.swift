@@ -113,20 +113,32 @@ struct UserGuideMicrophoneView: View {
         .lineSpacing(4)
     }
     
-    // Extracted contents with proper markdown AttributedString for layout stability
     private var noteContent: some View {
-        var str = try! AttributedString(markdown: "**Note:** When recording your voice, ensure **a quiet environment** with **clear speech** at a moderate pace for the best cloning results. After completing the voice cloning process, wait for more than 30 seconds (you can exit the app while waiting), you can check the \"Setting page > Voice Clone option\" state. If the state is **\"Cloned\"**, the voice cloning is successful. If it shows **\"Start new\"**, then voice cloning is unsuccessful.")
-        if let r1 = str.range(of: "Note:") { str[r1].foregroundColor = .red }
-        if let r2 = str.range(of: "\"Cloned\"") { str[r2].foregroundColor = .green }
-        if let r3 = str.range(of: "\"Start new\"") { str[r3].foregroundColor = .red }
-        return Text(str)
+        Text("Note:")
+            .foregroundColor(.red)
+            .fontWeight(.bold)
+        + Text(" ")
+        + Text("When recording your voice, ensure **a quiet environment** with **clear speech** at a moderate pace for the best cloning results. After completing the voice cloning process, wait for more than 30 seconds (you can exit the app while waiting), you can check the \"Setting page > Voice Clone option\" state. If the state is ")
+        + Text("\"Cloned\"")
+            .foregroundColor(.green)
+            .fontWeight(.bold)
+        + Text(", the voice cloning is successful. If it shows ")
+        + Text("\"Start new\"")
+            .foregroundColor(.red)
+            .fontWeight(.bold)
+        + Text(", then voice cloning is unsuccessful.")
     }
     
     private var voiceLimitContent: some View {
-        var str = try! AttributedString(markdown: "First, you need to go to the **Settings page > Voice clone option** to confirm the cloning status again. If it shows **Cloned,** it is a successful cloning. You can enter the Live Translation process and use your cloned voice to talk to foreign friends normally. If it still shows **Start new,** you can contact us to request additional attempts.")
-        if let r1 = str.range(of: "Cloned,") { str[r1].foregroundColor = .green }
-        if let r2 = str.range(of: "Start new,") { str[r2].foregroundColor = .red }
-        return Text(str)
+        (Text("First, you need to go to the **Settings page > Voice clone option** to confirm the cloning status again. If it shows ")
+        + Text("Cloned,")
+            .foregroundColor(.green)
+            .fontWeight(.bold)
+        + Text(" it is a successful cloning. You can enter the Live Translation process and use your cloned voice to talk to foreign friends normally. If it still shows ")
+        + Text("Start new,")
+            .foregroundColor(.red)
+            .fontWeight(.bold)
+        + Text(" you can contact us to request additional attempts."))
             .font(.system(size: 14, weight: .regular))
             .foregroundColor(Color(red: 71/255, green: 85/255, blue: 105/255))
             .lineSpacing(4)
@@ -140,9 +152,11 @@ struct UserGuideMicrophoneView: View {
     }
     
     private var voiceDoesNotSoundLikeMeContent: some View {
-        var str = try! AttributedString(markdown: "It is recommended that you **re-record** your voice for cloning in a **quiet environment** with **clearer and louder speech.** **Background noise levels,** your **volume , intonation and speaking speed** will all affect the effect of voice cloning.")
-        if let r1 = str.range(of: "Background noise levels,") { str[r1].foregroundColor = .red }
-        return Text(str)
+        (Text("It is recommended that you **re-record** your voice for cloning in a **quiet environment** with **clearer and louder speech.** ")
+        + Text("Background noise levels,")
+            .foregroundColor(.red)
+            .fontWeight(.bold)
+        + Text(" your **volume , intonation and speaking speed** will all affect the effect of voice cloning."))
             .font(.system(size: 14, weight: .regular))
             .foregroundColor(Color(red: 71/255, green: 85/255, blue: 105/255))
             .lineSpacing(4)

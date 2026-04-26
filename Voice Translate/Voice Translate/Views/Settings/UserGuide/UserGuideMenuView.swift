@@ -128,11 +128,11 @@ struct UserGuideMenuView: View {
                 .padding(.horizontal, 10)
             
             Button(action: {
-                if let url = URL(string: "mailto:bravohk.inc.app@gmail.com") {
+                if let url = URL(string: "mailto:manhhung05bn@gmail.com") {
                     UIApplication.shared.open(url)
                 }
             }) {
-                Text("bravohk.inc.app@gmail.com")
+                Text("manhhung05bn@gmail.com")
                     .font(.system(size: 14, weight: .bold))
                     .foregroundColor(Color(red: 59/255, green: 130/255, blue: 246/255)) // Blue
             }
@@ -151,7 +151,7 @@ struct UserGuideMenuView: View {
 
 struct UserGuideMenuRow: View {
     let imageName: String
-    let title: String
+    let title: LocalizedStringKey
     let destination: AnyView
     
     var body: some View {

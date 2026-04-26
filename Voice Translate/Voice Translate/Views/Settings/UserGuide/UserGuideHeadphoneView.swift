@@ -110,26 +110,25 @@ struct UserGuideHeadphoneView: View {
     }
     
     private var noteContent: some View {
-        var str = try! AttributedString(markdown: "**Note:** If the headset fails to connect the first time, try **closing the app completely** and reopening it to try again.")
-        if let range = str.range(of: "Note:") {
-            str[range].foregroundColor = .red
-        }
-        return Text(str)
+        Text("Note:")
+            .foregroundColor(.red)
+            .fontWeight(.bold)
+        + Text(" ")
+        + Text("If the headset fails to connect the first time, try **closing the app completely** and reopening it to try again.")
     }
     
     private var handlingIntroContent: some View {
-        var str = try! AttributedString(markdown: "According to current technical analysis, the unstable connection of such headphones is usually related to the hardware device itself, rather than the functional problem of the application. It is recommended that you try the following methods to improve connection stability:")
-        if let range = str.range(of: "hardware device itself,") {
-            str[range].foregroundColor = .red
-        }
-        return Text(str)
+        Text("According to current technical analysis, the unstable connection of such headphones is usually related to the ")
+        + Text("hardware device itself,")
+            .foregroundColor(.red)
+        + Text(" rather than the functional problem of the application. It is recommended that you try the following methods to improve connection stability:")
     }
     
     private var tipContent: some View {
-        var str = try! AttributedString(markdown: "Tip: If the problem persists, you can also contact the headset manufacturer's customer service for more professional hardware support.")
-        if let range = str.range(of: "Tip:") {
-            str[range].foregroundColor = .green
-        }
-        return Text(str)
+        Text("Tip:")
+            .foregroundColor(.green)
+            .fontWeight(.bold)
+        + Text(" ")
+        + Text("If the problem persists, you can also contact the headset manufacturer's customer service for more professional hardware support.")
     }
 }

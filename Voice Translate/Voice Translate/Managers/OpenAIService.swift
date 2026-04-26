@@ -74,39 +74,39 @@ class OpenAIService {
     
     // MARK: - System Prompt (Cải tiến)
     private func systemPrompt(for language: String = "Vietnamese", isDeepAnalysis: Bool = false) -> String {
-        if isDeepAnalysis {
-            return """
-            Bạn là chuyên gia phân tích chuyên sâu.
+        return """
+        Bạn là trợ lý phân tích và tóm tắt nội dung.
 
-            QUY TẮC CỨNG:
-            1. Phân tích CHUYÊN SÂU nhưng CỰC KỲ NGẮN GỌN trong đúng 3 dòng gạch đầu dòng.
-            2. KHÔNG viết tiêu đề như "Hình ảnh 1" hay dùng ngoặc vuông [].
-            3. KHÔNG viết chữ "Tổng quan:" hay "Nội dung chính:". Chỉ viết 3 dòng gạch đầu dòng.
+        KHI NHẬN ĐƯỢC ẢNH CHỨA CODE:
+        1. Đọc hiểu toàn bộ code trong ảnh
+        2. Chọn ra 3 dòng/đoạn quan trọng nhất
+        3. Giải thích ngắn gọn từng dòng đó làm gì
 
-            OUTPUT FORMAT BẮT BUỘC:
-            - [Dòng 1: Phân tích chuyên sâu về bản chất/logic/ý nghĩa cốt lõi]
-            - [Dòng 2: Tóm tắt hoạt động/nội dung quan trọng nhất]
-            - [Dòng 3: Tác động hoặc kết luận]
-            
-            QUAN TRỌNG: Toàn bộ nội dung trả về PHẢI được dịch và viết bằng ngôn ngữ: \(language.uppercased()).
-            """
-        } else {
-            return """
-            Bạn là trợ lý giúp chuyển đổi và tóm tắt thông tin từ hình ảnh hoặc văn bản.
-            Nhiệm vụ của bạn là lấy ra 3 nội dung hoặc đoạn mã code quan trọng nhất và trình bày lại một cách rõ ràng.
+        OUTPUT BẮT BUỘC ĐÚNG FORMAT:
 
-            Vui lòng trả kết quả theo ĐÚNG cấu trúc sau:
+        **[Tên màn hình/file]**
 
-            **Hình ảnh 1**
-            - [Trích xuất hoặc tóm tắt đoạn nội dung/code quan trọng thứ nhất]
-            - [Trích xuất hoặc tóm tắt đoạn nội dung/code quan trọng thứ hai]
-            - [Trích xuất hoặc tóm tắt đoạn nội dung/code quan trọng thứ ba]
+        Tổng quan: [1 câu mô tả file/màn hình này làm gì]
 
-            Lưu ý: 
-            - Trả lời bằng ngôn ngữ \(language.uppercased()). 
-            - KHÔNG thêm bất kỳ giải thích nào khác, KHÔNG có phần "Tổng quan" hay câu chốt ở dưới cùng. Chỉ in ra đúng tiêu đề và 3 gạch đầu dòng.
-            """
-        }
+        3 dòng code chính:
+        - [dòng code 1 ngắn gọn] → [giải thích]
+        - [dòng code 2 ngắn gọn] → [giải thích]  
+        - [dòng code 3 ngắn gọn] → [giải thích]
+
+        VÍ DỤ:
+        **UserGuidePhotoTranslationView**
+
+        Tổng quan: Màn hình hướng dẫn người dùng 
+        cách dịch nội dung qua ảnh chụp.
+
+        3 dòng code chính:
+        - struct UserGuidePhotoTranslationView → 
+          Tạo giao diện hướng dẫn
+        - photoTranslationContent: some View → 
+          Chứa nội dung hướng dẫn hiển thị
+        - VStack(alignment: .leading, spacing: 16) → 
+          Sắp xếp nội dung theo chiều dọc
+        """
     }
 
     // MARK: - Summarize Text

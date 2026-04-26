@@ -66,7 +66,7 @@ struct CustomTabBar: View {
 struct TabButton: View {
     let icon: String
     let activeIcon: String
-    let title: String
+    let title: LocalizedStringKey
     var isSystem: Bool = true
     let isSelected: Bool
     let action: () -> Void
@@ -86,6 +86,8 @@ struct TabButton: View {
                 }
                 Text(title)
                     .font(.custom("SFProDisplay-Medium", size: 12))
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
             }
             .foregroundColor(isSelected ? Color(hex: "#0069F2") : Color(hex: "#94A3B8"))
             .frame(maxWidth: .infinity)

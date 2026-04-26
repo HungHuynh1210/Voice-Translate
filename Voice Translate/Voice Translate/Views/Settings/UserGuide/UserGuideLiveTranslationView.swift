@@ -101,11 +101,11 @@ struct UserGuideLiveTranslationView: View {
     }
     
     private var delayIssueContent: some View {
-        var str = try! AttributedString(markdown: "In normal network conditions, the first translation takes about **4-5 seconds**. If it takes much longer, this is usually a **network issue**. Try **switching to a different network**. If delays persist despite good connectivity, feel free to contact us through the app's feedback feature.")
-        if let range = str.range(of: "network issue") {
-            str[range].foregroundColor = .red
-        }
-        return Text(str)
+        (Text("In normal network conditions, the first translation takes about **4-5 seconds**. If it takes much longer, this is usually a ")
+        + Text("network issue")
+            .foregroundColor(.red)
+            .fontWeight(.bold)
+        + Text(". Try **switching to a different network**. If delays persist despite good connectivity, feel free to contact us through the app's feedback feature."))
             .font(.system(size: 14, weight: .regular))
             .foregroundColor(Color(red: 71/255, green: 85/255, blue: 105/255))
             .lineSpacing(4)
